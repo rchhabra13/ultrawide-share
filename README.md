@@ -42,3 +42,7 @@ Using Zoom only? Zoom can already share two screens at once. Click Share Screen,
 ## How it works
 
 The whole app is one Swift file, [UltrawideShare.swift](UltrawideShare.swift). It uses Apple's ScreenCaptureKit to capture each selected display at full resolution and 30 frames per second, and draws each one into its own layer in a single window. Where each layer goes comes from the display positions macOS reports, so the picture matches your real desk layout. [build.sh](build.sh) compiles it with `swiftc`, wraps it in an app bundle, and signs it so macOS can remember the permission.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
